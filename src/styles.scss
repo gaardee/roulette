@@ -13,9 +13,8 @@ body {
 }
 
 #app {
-  // overflow: hidden;
+  overflow: hidden;
   contain: layout style;
-  overflow: visible;
 }
 
 .roulette-wheel {
@@ -104,4 +103,28 @@ body {
   left: 50%;
   margin: -7px;
   will-change: transform
+}
+
+#spinButtonGroup {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button {
+    cursor:pointer;
+    font-family: monospace;
+    font-size: 20pt;
+    width: 100px;
+    color: black;
+    background-color: #dca041;
+    border: 0px;
+    height: 50px;
+
+    &:first-of-type{
+      border-radius: 5px 0px 0px 5px;
+    }
+    &:last-of-type{
+      border-radius: 0px 5px 5px 0px;
+    }
+  }
 }

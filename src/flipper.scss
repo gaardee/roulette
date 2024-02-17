@@ -67,10 +67,15 @@
 }
 
 .result {
-  max-width: 500px;
-  margin: auto;
+  flex-direction: row-reverse;
+  display: flex;
+  justify-content: start;
+  overflow-y: hidden;
+  flex-wrap: wrap;
+  height: 140px;
   .flipper {
-    margin-right: 20px;
+    margin-left: 20px;
     margin-bottom: 20px;
+    margin-top: 5px;
   }
 }
