@@ -144,10 +144,6 @@ function isInRadiusEl(el, x, y) {
   return Math.pow(dx, 2) + Math.pow(dy, 2) <= Math.pow(r, 2);
 }
 
-document.getElementById("spin").onclick = function () {
-  window.startRotation(100);
-};
-
 document.getElementById("spinRed").onclick = function () {
   window.startRotation(
     100,
